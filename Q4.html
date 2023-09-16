@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .payment-option {
+            width: 30%;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-option:hover {
+            background-color: #e0e0e0;
+        }
+
+        .error-message {
+            color: #ff3333;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <p>Please choose your preferred payment method:</p>
+
+        <div class="payment-options">
+            <div class="payment-option">
+                <img src="credit-card-icon.png" alt="Credit Card">
+                <p>Credit Card</p>
+            </div>
+            <div class="payment-option">
+                <img src="paypal-icon.png" alt="PayPal">
+                <p>PayPal</p>
+            </div>
+            <div class="payment-option">
+                <img src="bank-icon.png" alt="Bank Transfer">
+                <p>Bank Transfer</p>
+            </div>
+        </div>
+
+        <div class="error-message">Please select a payment method to proceed.</div>
+    </div>
+</body>
+</html>

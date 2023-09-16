@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Back Button</title>
+    <style>
+        /* Basic form styling for demonstration purposes */
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <button type="submit">Submit</button>
+        <button type="button" onclick="goBack()">Back</button>
+    </form>
+
+    <script>
+        // JavaScript function to go back
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
